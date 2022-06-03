@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="w-full h-[90px] bg-black">
       <div className="max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full">
         <div>
-          <h1 className="text-[#00d8ff]">DEFI</h1>
+          <h1 className="text-[#00d8ff]">Laniakea</h1>
         </div>
         <div className="hidden md:flex">
           <ul className="flex text-white items-center">
@@ -20,7 +20,7 @@ const Navbar = () => {
             <li>Community</li>
             <li>About</li>
           </ul>
-          <button className="ml-4">Use Defi</button>
+          <button className="ml-4">Use Laniakea</button>
         </div>
         {/* Hamburger menu */}
         <div onClick={handleNav} className="block md:hidden">
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="text-2xl">Developers</li>
             <li className="text-2xl">Community</li>
             <li className="text-2xl">About</li>
-            <button className="m-8">Use Defi</button>
+            <button className="m-8">Use Laniakea</button>
           </ul>
         </div>
       </div>
