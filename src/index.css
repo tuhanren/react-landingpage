@@ -25,6 +25,6 @@
     @apply p-4;
   }
   button {
-    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-3xl;
+    @apply bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-purple)] py-3 px-7 rounded-2xl text-white;
   }
 }
