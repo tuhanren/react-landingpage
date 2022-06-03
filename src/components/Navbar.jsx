@@ -55,10 +55,23 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="text-2xl">Platform</li>
-            <li className="text-2xl">Developers</li>
-            <li className="text-2xl">Community</li>
-            <li className="text-2xl">About</li>
+            {navigation.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    to={item.href}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    className="transition-all duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
             <button className="m-8">Use Laniakea</button>
           </ul>
         </div>
