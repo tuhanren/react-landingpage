@@ -9,13 +9,17 @@
   --primary-purple: #6a00ff;
 }
 
+.blue {
+  color: var(--primary-blue);
+}
+
 /* add global style */
 @layer base {
   * {
     @apply font-[Kanit];
   }
   h1 {
-    @apply text-3xl font-bold;
+    @apply text-4xl font-bold;
   }
   li {
     @apply p-4;
