@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
+// import navigation data
+import { navigation } from "../data";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,10 +18,23 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex">
           <ul className="flex text-white items-center">
-            <li>Platform</li>
-            <li>Developers</li>
-            <li>Community</li>
-            <li>About</li>
+            {navigation.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    to={item.href}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    className="transition-all duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <button className="ml-4">Use Laniakea</button>
         </div>

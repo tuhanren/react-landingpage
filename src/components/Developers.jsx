@@ -5,7 +5,7 @@ import terminal from "../assets/terminal.png";
 const Developers = () => {
   return (
     <div className="w-full text-white bg-black">
-      <div className="max-w-[1240px] px-4 py-16 md:flex">
+      <div className="max-w-[1240px] mx-auto px-4 py-16 md:flex">
         <div>
           <h1>Superpowers for Laniakea developers.</h1>
           <p>

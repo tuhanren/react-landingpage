@@ -24,3 +24,19 @@ export const aboutData = [
     text: "Use a decentralized network of DeFi Keeper nodes to automate contracts, mitigating risk of manual interventions and centralized servers.",
   },
 ];
+
+// navigation
+export const navigation = [
+  {
+    name: "About",
+    href: "about",
+  },
+  {
+    name: "Developers",
+    href: "developers",
+  },
+  {
+    name: "Contact",
+    href: "contact",
+  },
+];
